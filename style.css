@@ -1,0 +1,88 @@
+.field {
+  display: flex;
+}
+
+.level-zero {
+  flex-direction: row;
+}
+.level-zero .red {
+  align-self: flex-start;
+}
+.level-one .field {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.level-two .field {
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: space-around;
+  align-items: center;
+}
+
+.level-three .field {
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-content: flex-end;
+}
+
+.level-four .field {
+  flex-direction: row-reverse;
+  justify-content: space-around;
+}
+.level-four .field .red {
+  align-self: flex-start;
+  justify-self: space-around;
+}
+.level-four .field .blue {
+  align-self: center;
+  justify-self: space-around;
+}
+.level-four .field .purple {
+  align-self: flex-end;
+  justify-self: space-around;
+}
+.level-five .field {
+  flex-direction: row;
+}
+.level-five .field .red {
+  flex-basis: 40%;
+}
+.level-five .field .purple {
+  flex-basis: 40%;
+}
+.level-six .field {
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+}
+
+.level-six .field .purple {
+  flex-basis: 20%;
+  align-self: flex-start;
+}
+
+.level-six .field .blue {
+  flex-basis: 50%;
+}
+
+.level-six .field .red {
+  flex-basis: 30%;
+}
+
+.level-seven .field {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.level-eight .field {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+}
+.level-eight .field .purple {
+  justify-self: center;
+  flex-grow: 1;
+}
